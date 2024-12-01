@@ -1,0 +1,35 @@
+/* src/styles/Welcome.css */
+.welcome-container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 500px; /* Fixed width */
+  }
+  
+  .welcome-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .name-input {
+    padding: 10px;
+    margin-bottom: 10px; /* Space between input and button */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+  }
+  
+  .submit-button {
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }

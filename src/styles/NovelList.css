@@ -1,0 +1,27 @@
+/* src/styles/NovelList.css */
+.novel-list-container {
+    background-color: #ffffff; /* White background for the list */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width */
+    margin-top: 20px; /* Space above the list */
+  }
+  
+  .novel-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+  }
+  
+  .novel-item {
+    padding: 10px;
+    margin: 5px 0; /* Space between items */
+    background-color: #e9ecef; /* Light gray background */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .novel-item:hover {
+    background-color: #ced4da; /* Darker gray on hover */
+  }

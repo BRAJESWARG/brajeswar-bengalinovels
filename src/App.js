@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Welcome from './components/Welcome';
+import NovelList from './components/NovelList';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [userName, setUserName] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleNameSubmit = (name) => {
+    setUserName(name);
+    setIsSubmitted(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!isSubmitted ? (
+        <Welcome onSubmit={handleNameSubmit} />
+      ) : (
+        <NovelList name={userName} />
+      )}
     </div>
   );
-}
+};
 
 export default App;
