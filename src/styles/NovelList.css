@@ -1,10 +1,18 @@
 /* src/styles/NovelList.css */
+.name{
+  color: navy !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Turning{
+  color: #666 !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .novel-list-container {
     background-color: #ffffff; /* White background for the list */
     padding: 30px;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 300px; /* Fixed width */
+    width: 240px; /* Fixed width */
     margin-top: 20px; /* Space above the list */
   }
   
@@ -20,6 +28,7 @@
     border-radius: 4px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s; /* Smooth transition */
+    color: rgb(22, 113, 187);
   }
   
   .novel-item:hover {

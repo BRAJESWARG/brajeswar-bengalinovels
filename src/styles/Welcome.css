@@ -33,3 +33,46 @@
   .submit-button:hover {
     background-color: #0056b3; /* Darker shade on hover */
   }
+
+  .image{
+    width: 80%;
+    border-radius: 50%;
+    height: 80%;
+    box-shadow: 0 4px 8px blueviolet;
+    border: 1px solid blueviolet;
+    padding-bottom: 5rem;
+    background-color: lightslategray;
+    margin-bottom: 2rem;
+  }
+
+  h4{
+    color: rgb(100, 122, 247);
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  @media screen and (max-width: 768px) {
+
+    .image{
+      width: 60%;
+      border-radius: 50%;
+      height: 60%;
+      padding-bottom: 5rem;
+      margin-bottom: 2rem;
+    }  
+
+    .welcome-container {
+      width: 240px;
+      box-shadow: 0 4px 8px rgba(182, 3, 3, 0.1);
+    }
+    h4{
+      font-size: 0.6rem;
+    }
+
+    .name-input {
+      font-size: 12px;
+      padding: 6px;
+      border: 1px solid blueviolet
+    }
+    
+  }

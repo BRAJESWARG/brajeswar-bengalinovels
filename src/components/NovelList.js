@@ -18,8 +18,8 @@ const NovelList = ({ name }) => {
 
   return (
     <div className="novel-list-container">
-      <h2>Hey! {name}</h2>
-      <h3>Turning Pages, Stealing Hearts -Happy Reading!</h3>
+      <h2 className='name'>Hey! {name}</h2>
+      <h3 className='Turning'>Turning Pages, Stealing Hearts -Happy Reading!</h3>
       <ul className="novel-list">
         {novels.map((novel, index) => (
           <li key={index} onClick={() => openPDF(novel.file)} className="novel-item">
