@@ -52,3 +52,11 @@
   /* font-family: 'Arial', sans-serif; Font style */
   padding: 20px; /* Padding around the app */
 }
+
+@media screen and (max-width: 728px) {
+
+  .App{
+    height: 100vh;
+  }
+
+}
