@@ -10,7 +10,7 @@ const novels = [
   { title: 'শ্রীকান্ত', file: 'শ্রীকান্ত.pdf' },
 ];
 
-const NovelList = ({ name }) => {
+const NovelList = ({ name, savedNames }) => {
   const openPDF = (file) => {
     const pdfPath = require(`../assets/${file}`);
     window.open(pdfPath, '_blank');
@@ -18,7 +18,7 @@ const NovelList = ({ name }) => {
 
   return (
     <div className="novel-list-container">
-      <h2 className="name">Hey! {name}!</h2>
+      <h2 className="name">Hey, {name}!</h2>
       <h3 className="Turning">Turning Pages, Stealing Hearts - Happy Reading!</h3>
       <ul className="novel-list">
         {novels.map(({ title, file }, index) => (
@@ -33,6 +33,14 @@ const NovelList = ({ name }) => {
           </li>
         ))}
       </ul>
+      <div className="saved-names">
+        <h3>Saved Names:</h3>
+        <ul>
+          {savedNames.map((savedName, index) => (
+            <li key={index}>{savedName}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
