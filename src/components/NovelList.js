@@ -18,7 +18,7 @@ const NovelList = ({ name }) => {
 
   return (
     <div className="novel-list-container">
-      <h2 className="name">Hey, {name}!</h2>
+      <h2 className="name">Hey! {name}!</h2>
       <h3 className="Turning">Turning Pages, Stealing Hearts - Happy Reading!</h3>
       <ul className="novel-list">
         {novels.map(({ title, file }, index) => (

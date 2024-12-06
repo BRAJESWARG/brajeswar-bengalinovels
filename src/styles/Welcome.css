@@ -2,7 +2,7 @@
 .welcome-container {
   background-color: #ffffff;
   /* White background for the form */
-  padding: 30px;
+  padding: 52px;
   border-radius: 8px;
   /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -51,9 +51,8 @@
 }
 
 .image {
-  width: 80%;
+  width: 40%;
   border-radius: 50%;
-  height: 80%;
   box-shadow: 0 4px 8px blueviolet;
   border: 1px solid blueviolet;
   padding-bottom: 5rem;
@@ -84,13 +83,14 @@ h4 {
     border-radius: 50%;
     height: 60%;
     padding-bottom: 5rem;
-    margin-bottom: 5rem;
-    margin-top: -5rem;
+    /* margin-bottom: 5rem; */
+    /* margin-top: -5rem; */
   }
 
   .welcome-container {
     width: 240px;
     box-shadow: 0 4px 8px rgba(182, 3, 3, 0.1);
+    padding: 20px;
   }
 
   h4 {
@@ -103,6 +103,11 @@ h4 {
     font-size: 12px;
     padding: 6px;
     border: 1px solid blueviolet
+  }
+
+  .novel-list-container {
+    padding: 20px !important;
+    margin: 0px !important;
   }
 
 }
