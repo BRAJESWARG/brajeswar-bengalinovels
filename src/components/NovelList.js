@@ -1,4 +1,3 @@
-// src/components/NovelList.js
 import React from 'react';
 import '../styles/NovelList.css';
 
@@ -13,17 +12,24 @@ const novels = [
 
 const NovelList = ({ name }) => {
   const openPDF = (file) => {
-    window.open(require(`../assets/${file}`), '_blank');
+    const pdfPath = require(`../assets/${file}`);
+    window.open(pdfPath, '_blank');
   };
 
   return (
     <div className="novel-list-container">
-      <h2 className='name'>Hey! {name}</h2>
-      <h3 className='Turning'>Turning Pages, Stealing Hearts -Happy Reading!</h3>
+      <h2 className="name">Hey, {name}!</h2>
+      <h3 className="Turning">Turning Pages, Stealing Hearts - Happy Reading!</h3>
       <ul className="novel-list">
-        {novels.map((novel, index) => (
-          <li key={index} onClick={() => openPDF(novel.file)} className="novel-item">
-            {novel.title}
+        {novels.map(({ title, file }, index) => (
+          <li
+            key={index}
+            onClick={() => openPDF(file)}
+            className="novel-item"
+            role="button"
+            tabIndex={0}
+          >
+            {title}
           </li>
         ))}
       </ul>

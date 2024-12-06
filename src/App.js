@@ -4,20 +4,18 @@ import NovelList from './components/NovelList';
 import './App.css';
 
 const App = () => {
-  const [userName, setUserName] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [userData, setUserData] = useState({ name: '', isSubmitted: false });
 
   const handleNameSubmit = (name) => {
-    setUserName(name);
-    setIsSubmitted(true);
+    setUserData({ name, isSubmitted: true });
   };
 
   return (
     <div className="App">
-      {!isSubmitted ? (
+      {!userData.isSubmitted ? (
         <Welcome onSubmit={handleNameSubmit} />
       ) : (
-        <NovelList name={userName} />
+        <NovelList name={userData.name} />
       )}
     </div>
   );
