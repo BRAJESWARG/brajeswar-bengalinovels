@@ -10,12 +10,7 @@ const novels = [
   { title: 'শ্রীকান্ত', file: 'শ্রীকান্ত.pdf' },
 ];
 
-const NovelList = ({ name }) => {
-  const openPDF = (file) => {
-    const pdfPath = require(`../assets/${file}`);
-    window.open(pdfPath, '_blank');
-  };
-
+const NovelList = ({ name, onOpenPdf }) => {
   return (
     <div className="novel-list-container">
       <h2 className="name">Hey, {name}!</h2>
@@ -24,7 +19,7 @@ const NovelList = ({ name }) => {
         {novels.map(({ title, file }, index) => (
           <li
             key={index}
-            onClick={() => openPDF(file)}
+            onClick={() => onOpenPdf(file)}
             className="novel-item"
             role="button"
             tabIndex={0}
