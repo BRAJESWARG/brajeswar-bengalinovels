@@ -8,6 +8,7 @@ const novels = [
   { title: 'দেবদাস', file: 'দেবদাস.pdf' },
   { title: 'পরিণীতা', file: 'পরিণীতা.pdf' },
   { title: 'শ্রীকান্ত', file: 'শ্রীকান্ত.pdf' },
+  { title: 'আমি পদ্মজা, file: 'Ami_Padmaja-Ilma_Behrouj.pdf' },
 ];
 
 const NovelList = ({ name }) => {
